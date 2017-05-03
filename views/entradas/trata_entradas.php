@@ -27,7 +27,7 @@
      // echo "unidades  ".$_POST["unidades"];
          $entrada=new Entrada(array(
               "id"=> isset($_POST["idEntrada"]) ? (int) $_POST["idEntrada"]:0,
-              "fecha"=>$_POST["fecha2"],
+              "fecha"=>$_POST["fecha22"],
               "unidades"=>$_POST["unidades"],
               "idproveedor"=>$_POST["idproveedor"],
               "idarticulo"=>$_POST["idarticulo"],

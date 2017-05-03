@@ -19,23 +19,23 @@ $fecha = "2017-04-19";
 //      }else {
 //        $fecha="";
 //       }
-// echo $fecha;
-// $entrada=new Entrada(array(
-//               "id"=> 3,
-//               "fecha"=>$fecha,
-//               "unidades"=>4,
-//               "idproveedor"=>2,
-//               "idarticulo"=>4,
-//                "observa"=>"aa"
-//               ));
-//  $entrada->insert();
+echo $fecha;
+$entrada=new Entrada(array(
+              "id"=> 3,
+              "fecha"=>$fecha,
+              "unidades"=>4,
+              "idproveedor"=>2,
+              "idarticulo"=>4,
+               "observa"=>"aa"
+              ));
+ $entrada->insert();
 $articulo=isset($_REQUEST["articulo"])?(int) $_REQUEST["articulo"]:0;
 $palabra=isset($_REQUEST["palabra"])? $_REQUEST["palabra"]:"";
 $todas=isset($_REQUEST["todas"])? $_REQUEST["todas"]:"";
 
 $start = isset($_GET["start"])? (int)$_GET["start"]: 0;
 
-$order = isset($_GET["order"])? $_GET["order"]:"fecha";
+$order = isset($_GET["order"])? $_GET["order"]:"nombre";
 $filtro="";
 $sql="";
 $start=isset($_GET["start"])?(int) $_GET["start"]:0;
